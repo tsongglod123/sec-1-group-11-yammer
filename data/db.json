@@ -2,23 +2,33 @@
 	"posts": [
 		{
 			"id": 1,
-			"title": "json-server",
-			"author": "typicode"
+			"content": "first complain!",
+			"userId": 1
+		},
+		{
+			"id": 2,
+			"content": "I am so f*cking H U N G R Y !",
+			"userId": 2
 		},
 		{
 			"id": 3,
-			"title": "test",
-			"author": "tan"
+			"content": "DEEZ NUTS",
+			"userId": 2
+		},
+		{
+			"id": 4,
+			"content": "Hello, World!",
+			"userId": 1
 		}
 	],
-	"comments": [
+	"users": [
 		{
 			"id": 1,
-			"body": "some comment",
-			"postId": 1
+			"username": "tansadza"
+		},
+		{
+			"id": 2,
+			"username": "niklaz101"
 		}
-	],
-	"profile": {
-		"name": "typicode"
-	}
+	]
 }
