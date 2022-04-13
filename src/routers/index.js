@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Welcome from "../views/Welcome.vue";
 import Homepage from "../views/Homepage.vue";
 import User from "../views/User.vue";
+import NotFound from "../views/NotFound.vue";
 
 const history = createWebHistory();
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
 		path: "/:username",
 		name: "user",
 		component: User,
+	},
+	{
+		path: "/:catchNotMatchPath(.*)",
+		name: "not-found",
+		component: NotFound,
 	},
 ];
 

@@ -1,5 +1,7 @@
 <script setup></script>
 
-<template></template>
+<template>
+	<div id="homepage">test</div>
+</template>
 
 <style scoped></style>

@@ -1,10 +1,8 @@
-<script setup>
-import VTextArea from "./components/VTextArea.vue";
-</script>
+<script setup></script>
 
 <template>
 	<div id="main">
-		<VTextArea />
+		<router-view></router-view>
 	</div>
 </template>
 
