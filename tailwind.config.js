@@ -12,6 +12,7 @@ module.exports = {
 		utils: true,
 		logs: true,
 		rtl: false,
-		darkTheme: "halloween",
+		prefix: "",
+		darkTheme: "black",
 	},
 };
