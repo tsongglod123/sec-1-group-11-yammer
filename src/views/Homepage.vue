@@ -2,6 +2,7 @@
 import { ref, onBeforeMount } from "vue";
 import { useRoute } from "vue-router";
 import VTextarea from "../components/VTextarea.vue";
+import VContents from "../components/VContents.vue";
 
 const URL = "http://localhost:5000/posts";
 
@@ -34,6 +35,7 @@ const createPost = async (new_content) => {
 	if (res.status === 201) {
 		const newContent = await res.json();
 		posts.value.unshift(newContent);
+		content.value = "";
 	}
 };
 
@@ -45,9 +47,8 @@ onBeforeMount(async () => {
 <template>
 	<div id="homepage">
 		<VTextarea v-model="content" @post:content="createPost" />
-		<div v-for="post in posts" :key="post.id">
-			{{ post }}
-		</div>
+		<br />
+		<VContents :posts="posts" :userId="params.userId" />
 	</div>
 </template>
 

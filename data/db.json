@@ -46,79 +46,24 @@
       "id": 10
     },
     {
-      "content": "tan",
-      "userId": "4",
+      "content": "test",
+      "userId": "1",
       "id": 11
     },
     {
-      "content": "omg",
-      "userId": "2",
+      "content": "aaa",
+      "userId": "1",
       "id": 12
     },
     {
-      "content": "hew kaw",
-      "userId": "2",
+      "content": "aaa",
+      "userId": "1",
       "id": 13
     },
     {
-      "content": "pooping",
-      "userId": "2",
+      "content": "ddd",
+      "userId": "1",
       "id": 14
-    },
-    {
-      "content": "asdasdasdasdas",
-      "userId": "2",
-      "id": 15
-    },
-    {
-      "content": "iiiiiii",
-      "userId": "2",
-      "id": 16
-    },
-    {
-      "content": "sleeping",
-      "userId": "2",
-      "id": 17
-    },
-    {
-      "content": "ersf/krfk;eioleioklrfioklerf",
-      "userId": "1",
-      "id": 18
-    },
-    {
-      "content": "eeeeeeeee",
-      "userId": "1",
-      "id": 19
-    },
-    {
-      "content": "test",
-      "userId": "1",
-      "id": 20
-    },
-    {
-      "content": "asfsdfgdf",
-      "userId": "1",
-      "id": 21
-    },
-    {
-      "content": "asfsdfgdfasdasdasd",
-      "userId": "1",
-      "id": 22
-    },
-    {
-      "content": "sdfghfghfgh",
-      "userId": "1",
-      "id": 23
-    },
-    {
-      "content": "sdfghfghfghsdfd",
-      "userId": "1",
-      "id": 24
-    },
-    {
-      "content": "sdfghfghfghsdfdsdfgsd",
-      "userId": "1",
-      "id": 25
     }
   ],
   "users": [
