@@ -1,11 +1,39 @@
 <script setup>
+import { ref } from "vue";
+
+const URL = "http://localhost:5000/posts";
+
+const content = ref("");
+
 const props = defineProps({
-	content: {
+	posts: {
+		type: Array,
+		require: true,
+	},
+	userId: {
 		type: String,
 		require: true,
 	},
 });
-const emits = defineEmits(["post:content"]);
+
+// POST
+const createPost = async (new_content) => {
+	const res = await fetch(URL, {
+		method: "POST",
+		headers: {
+			"content-Type": "application/json",
+		},
+		body: JSON.stringify({
+			content: new_content,
+			userId: props.userId,
+		}),
+	});
+	if (res.status === 201) {
+		const newContent = await res.json();
+		props.posts.unshift(newContent);
+		content.value = "";
+	}
+};
 </script>
 
 <template>
@@ -23,7 +51,8 @@ const emits = defineEmits(["post:content"]);
 						<button
 							type="button"
 							class="btn"
-							@click.left="$emit('post:content', content)"
+							@click.left="createPost(content)"
+							:disabled="content.length < 1"
 						>
 							complain
 						</button>

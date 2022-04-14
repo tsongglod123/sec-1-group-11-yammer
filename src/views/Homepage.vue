@@ -9,7 +9,6 @@ const URL = "http://localhost:5000/posts";
 // this.$route.params for template
 let { params } = useRoute();
 const posts = ref([]);
-const content = ref("");
 
 // GET
 const getPosts = async (url) => {
@@ -20,25 +19,6 @@ const getPosts = async (url) => {
 	}
 };
 
-// POST
-const createPost = async (new_content) => {
-	const res = await fetch(URL, {
-		method: "POST",
-		headers: {
-			"content-Type": "application/json",
-		},
-		body: JSON.stringify({
-			content: new_content,
-			userId: params.userId,
-		}),
-	});
-	if (res.status === 201) {
-		const newContent = await res.json();
-		posts.value.unshift(newContent);
-		content.value = "";
-	}
-};
-
 onBeforeMount(async () => {
 	await getPosts(URL);
 });
@@ -46,7 +26,7 @@ onBeforeMount(async () => {
 
 <template>
 	<div id="homepage">
-		<VTextarea v-model="content" @post:content="createPost" />
+		<VTextarea :posts="posts" :userId="params.userId" />
 		<br />
 		<VContents :posts="posts" :userId="params.userId" />
 	</div>
