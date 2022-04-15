@@ -3,7 +3,7 @@ import { ref, onBeforeMount } from "vue";
 import { useRoute } from "vue-router";
 import VTextarea from "../components/VTextarea.vue";
 import VContents from "../components/VContents.vue";
-import VNavbar from "../components/VNavBar.vue";
+import VNavbar from "../components/VNavbar.vue";
 
 const URL = "http://localhost:5000/posts";
 
@@ -27,7 +27,7 @@ onBeforeMount(async () => {
 
 <template>
 	<div id="homepage">
-		<VNavbar />
+		<VNavbar :userId="params.userId" />
 		<VTextarea
 			:posts="posts"
 			:userId="params.userId"
