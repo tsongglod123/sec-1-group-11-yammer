@@ -55,7 +55,7 @@ const createPost = async (new_content) => {
 							@click.left="createPost(content)"
 							:disabled="content.length < 1"
 						>
-							complain
+							YAM!!!
 						</button>
 					</div>
 				</div>
