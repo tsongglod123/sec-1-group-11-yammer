@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
     <div id="content-list">
         <div v-for="post in posts" :key="post.id">
-            <div class="hoverContent max-w-xl shadow-xl bg-white my-2 rounded-lg">
+            <div class="hover-content max-w-xl shadow-xl bg-white my-2 rounded-xl">
                 <div class="box-border max-h-xl max-w-xl p-6 ">
                     <div class="font-semibold text-xl">
                         {{
@@ -31,7 +31,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.hoverContent:hover {
+.hover-content:hover {
     @apply scale-110 duration-500 ease-in-out;
 }
 </style>
