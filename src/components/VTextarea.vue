@@ -42,12 +42,12 @@ const createPost = async (new_content) => {
 			<div class="py-7">
 				<textarea
 					class="textarea focus:outline-none text-xl textarea-ghost bg-gray-200 rounded-xl"
-					rows="2"
+					rows="3"
 					cols="50"
 					placeholder="What happened?"
 					v-model="content"
 				></textarea>
-				<div class="grid justify-items-end">
+				<div class="grid justify-items-end pt-2">
 					<div id="post-button">
 						<button
 							type="button"
