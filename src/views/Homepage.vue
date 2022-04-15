@@ -12,24 +12,33 @@ const posts = ref([]);
 
 // GET
 const getPosts = async (url) => {
-	const res = await fetch(url);
-	if (res.status === 200) {
-		posts.value = await res.json();
-		posts.value = posts.value.reverse();
-	}
+    const res = await fetch(url);
+    if (res.status === 200) {
+        posts.value = await res.json();
+        posts.value = posts.value.reverse();
+    }
 };
 
 onBeforeMount(async () => {
-	await getPosts(URL);
+    await getPosts(URL);
 });
 </script>
 
 <template>
-	<div id="homepage">
-		<VTextarea :posts="posts" :userId="params.userId" />
-		<br />
-		<VContents :posts="posts" :userId="params.userId" />
-	</div>
+    <div id="homepage">
+        <VTextarea
+            :posts="posts"
+            :userId="params.userId"
+            class="flex justify-center pt-10"
+        />
+        <VContents
+            :posts="posts"
+            :userId="params.userId"
+            class="grid justify-center pt-3"
+        />
+    </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
