@@ -38,10 +38,10 @@ const createPost = async (new_content) => {
 
 <template>
 	<div id="text-area">
-		<div class="card w-96 bg-base-100 shadow-xl">
+		<div class="card w-2/5 shadow-xl bg-white">
 			<div class="card-body">
 				<textarea
-					class="textarea"
+					class="textarea focus:outline-none text-xl textarea-ghost bg-gray-200 rounded-xl"
 					rows="2"
 					placeholder="What happened?"
 					v-model="content"
