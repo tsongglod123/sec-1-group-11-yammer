@@ -14,25 +14,24 @@ const props = defineProps({
 <template>
     <div id="content-list">
         <div v-for="post in posts" :key="post.id">
-            <div class="hoverContent card max-w-xl shadow-xl bg-white">
-                <div class="card-body">
-                    <div class="card-title">
+            <div class="hoverContent max-w-xl shadow-xl bg-white my-2 rounded-lg">
+                <div class="box-border max-h-xl max-w-xl p-6 ">
+                    <div class="font-semibold text-xl">
                         {{
                             post.userId == userId
                                 ? "You complain"
                                 : "Someone complains"
                         }}
                     </div>
-                    <div class="break-words">{{ post.content }}</div>
+                    <div class="break-words pt-2">{{ post.content }}</div>
                 </div>
             </div>
-            <br />
         </div>
     </div>
 </template>
 
 <style scoped>
 .hoverContent:hover {
-    @apply scale-125 duration-500 ease-in-out;
+    @apply scale-110 duration-500 ease-in-out;
 }
 </style>

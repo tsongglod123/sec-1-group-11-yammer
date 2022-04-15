@@ -31,11 +31,10 @@ onBeforeMount(async () => {
             :userId="params.userId"
             class="flex justify-center pt-10"
         />
-        <br />
         <VContents
             :posts="posts"
             :userId="params.userId"
-            class="grid justify-center"
+            class="grid justify-center pt-3"
         />
     </div>
 </template>
