@@ -34,9 +34,9 @@ const props = defineProps({
 
 <style scoped>
 .hover-content:hover .box {
-    @apply scale-100 opacity-50 blur-sm;
+    @apply scale-100 opacity-50 blur-sm duration-300 ease-in-out
 }
 .hover-content:hover .box:hover {
-    @apply blur-none scale-110 opacity-100;
+    @apply blur-none scale-110 opacity-100 
 }
 </style>
