@@ -7,7 +7,7 @@ let { params } = useRoute();
 
 <template>
 	<div id="homepage">
-		<VNavbar :userId="params.userId" />
+		<VNavbar :userId="params.userId"/>
 		<router-view></router-view>
 	</div>
 </template>

@@ -34,7 +34,7 @@ onBeforeMount(async () => {
 		<VContents
 			:posts="posts"
 			:userId="parseInt(params.userId)"
-			class="grid justify-center pt-3"
+			class="grid justify-center pt-2"
 		/>
 	</div>
 </template>

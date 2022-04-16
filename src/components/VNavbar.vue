@@ -32,7 +32,7 @@ const logout = () => appRouter.push({ name: "root" });
 </script>
 
 <template>
-	<div id="navbar-section">
+	<div id="navbar-section" class="sticky top-0 left-0 right-0">
 		<div class="navbar bg-base-200">
 			<div class="navbar-start">
 				<div class="dropdown">
