@@ -87,7 +87,7 @@ const login = async (name) => {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .btn {
-	@apply bg-teal-400 hover:bg-teal-500;
+	@apply btn-primary rounded-full;
 }
 .input {
 	@apply w-full max-w-xs;
