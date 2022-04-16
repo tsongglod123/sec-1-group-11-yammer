@@ -6,10 +6,10 @@ let { params } = useRoute();
 </script>
 
 <template>
-	<div id="homepage">
-		<VNavbar :userId="params.userId"/>
-		<router-view></router-view>
-	</div>
+    <div id="homepage">
+        <VNavbar :userId="params.userId" />
+        <router-view></router-view>
+    </div>
 </template>
 
 <style scoped></style>

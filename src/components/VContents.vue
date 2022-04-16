@@ -30,6 +30,6 @@ const props = defineProps({
 
 <style scoped>
 .box-element {
-    @apply shadow-xl bg-white my-2 rounded-xl;
+    @apply shadow-xl bg-white my-3 rounded-xl;
 }
 </style>

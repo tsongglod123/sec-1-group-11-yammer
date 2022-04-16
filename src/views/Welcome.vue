@@ -53,8 +53,8 @@ const login = async (name) => {
 
 <template>
 	<div id="welcome-page" style="font-family: 'Poppins', sans-serif">
-		<div class="text-7xl project-title text-center pt-60 font-semibold">
-			Yammer
+		<div class="text-7xl project-title text-center pt-60 font-extrabold">
+			<span class="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-700">Yammer</span>
 		</div>
 		<div class="grid justify-items-center py-8">
 			<div id="login" class="flex justify-items-center">
@@ -80,7 +80,6 @@ const login = async (name) => {
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .btn {
 	@apply btn-primary rounded-full;
 }

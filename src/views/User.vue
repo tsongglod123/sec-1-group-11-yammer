@@ -10,22 +10,30 @@ const user = ref({});
 
 // GET
 const getUser = async (url, id) => {
-	const res = await fetch(url + "/" + id);
-	if (res.status === 200) {
-		user.value = await res.json();
-	}
+    const res = await fetch(url + "/" + id);
+    if (res.status === 200) {
+        user.value = await res.json();
+    }
 };
 
 onBeforeMount(async () => {
-	await getUser(URL, params.userId);
+    await getUser(URL, params.userId);
 });
 </script>
 
 <template>
-	<div id="user-page">
-		<div>{{ user.username }}</div>
-		<VUserContents :userId="parseInt(params.userId)" />
-	</div>
+    <div id="user-page">
+        <div class="flex justify-center pt-5">
+            <button type="button" class="btn">
+                <span class="font-bold">{{ user.username }}</span>
+            </button>
+        </div>
+        <VUserContents :userId="parseInt(params.userId)" />
+    </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.btn {
+	@apply btn-primary rounded-full;
+}
+</style>
