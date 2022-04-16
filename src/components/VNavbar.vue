@@ -22,12 +22,12 @@ const getUser = async (url, id) => {
 		user.value = await res.json();
 		appRouter.push({
 			name: "user",
-			params: { username: user.value.username },
+			params: { userId: user.value.id },
 		});
 	}
 };
 
-const homepage = () => appRouter.push({ name: "homepage" });
+const homepage = () => appRouter.push({ name: "contents" });
 const logout = () => appRouter.push({ name: "root" });
 </script>
 
@@ -71,7 +71,7 @@ const logout = () => appRouter.push({ name: "root" });
 				</div>
 			</div>
 			<div class="navbar-center">
-				<router-link :to="{ name: 'homepage' }">
+				<router-link :to="{ name: 'contents' }">
 					<a class="btn btn-ghost normal-case text-xl">Yammer</a>
 				</router-link>
 			</div>
