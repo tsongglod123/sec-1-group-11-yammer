@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import VLogin from "../components/buttons/VLogin.vue";
 
 const URL = "http://localhost:5000/users";
 
@@ -66,13 +67,7 @@ const login = async (name) => {
 						@keyup.enter="login($event.target.value)"
 					/>
 				</div>
-				<button
-					type="button"
-					class="btn btn-lg rounded-full shadow-lg border-none"
-					@click.left="login(username)"
-				>
-					Go
-				</button>
+				<VLogin :username="username" @click:action="login" />
 			</div>
 			<div
 				v-show="isNotFill"
