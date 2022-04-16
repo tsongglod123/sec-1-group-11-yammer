@@ -1,28 +1,31 @@
 <script setup>
 import { ref, onBeforeMount } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import { useRoute } from "vue-router";
+import VUserContents from "../components/VUserContents.vue";
 
 const URL = "http://localhost:5000/users";
 
 let { params } = useRoute();
-const appRouter = useRouter();
-const posts = ref([]);
+const user = ref({});
 
 // GET
-const getPosts = async (url, id) => {
-	const res = await fetch(url + "/" + id + "/" + "?_embed=posts");
+const getUser = async (url, id) => {
+	const res = await fetch(url + "/" + id);
 	if (res.status === 200) {
-		posts.value = await res.json();
+		user.value = await res.json();
 	}
 };
 
 onBeforeMount(async () => {
-	await getPosts(URL, params.userId);
+	await getUser(URL, params.userId);
 });
 </script>
 
 <template>
-	<div id="user-page">{{ posts }}</div>
+	<div id="user-page">
+		<div>{{ user.username }}</div>
+		<VUserContents :userId="parseInt(params.userId)" />
+	</div>
 </template>
 
 <style scoped></style>

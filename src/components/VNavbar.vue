@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import VLogout from "./buttons/VLogout.vue";
 
 const props = defineProps({
 	userId: {
@@ -28,7 +29,7 @@ const getUser = async (url, id) => {
 };
 
 const homepage = () => appRouter.push({ name: "contents" });
-const logout = () => appRouter.push({ name: "root" });
+const logout = (name) => appRouter.push(name);
 </script>
 
 <template>
@@ -70,7 +71,9 @@ const logout = () => appRouter.push({ name: "root" });
 							</a>
 						</li>
 						<li>
-							<button @click.left="logout">Logout</button>
+							<button @click.left="logout({ name: 'root' })">
+								Logout
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -82,27 +85,7 @@ const logout = () => appRouter.push({ name: "root" });
 			</div>
 			<div class="navbar-end">
 				<div class="tooltip tooltip-left" data-tip="Logout">
-					<button
-						class="btn btn-ghost btn-circle"
-						@click.left="logout"
-					>
-						<div class="indicator">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-6 w-6"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-								stroke-width="2"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-								/>
-							</svg>
-						</div>
-					</button>
+					<VLogout @click:action="logout" />
 				</div>
 			</div>
 		</div>
