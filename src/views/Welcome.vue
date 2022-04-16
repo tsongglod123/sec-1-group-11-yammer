@@ -39,7 +39,7 @@ const login = async (name) => {
 		}
 		if (isMatch.value) {
 			appRouter.push({
-				name: "homepage",
+				name: "contents",
 				params: { userId: userId },
 			});
 		} else {

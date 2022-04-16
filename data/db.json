@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "posts": [{
             "id": 1,
             "content": "first complain!",
@@ -228,4 +229,257 @@
             "id": 8
         }
     ]
+=======
+  "posts": [
+    {
+      "id": 1,
+      "content": "first complain!",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "content": "I am so f*cking H U N G R Y !",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "content": "DEEZ NUTS",
+      "userId": 2
+    },
+    {
+      "id": 4,
+      "content": "Hello, World!",
+      "userId": 1
+    },
+    {
+      "content": "test",
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "content": "again",
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "content": "aaaaaaa",
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "content": "123",
+      "userId": 4,
+      "id": 9
+    },
+    {
+      "content": "tong",
+      "userId": 4,
+      "id": 10
+    },
+    {
+      "content": "test",
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "content": "aaa",
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "content": "aaa",
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "content": "ddd",
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "content": "test",
+      "userId": 6,
+      "id": 15
+    },
+    {
+      "content": "ggg",
+      "userId": 6,
+      "id": 16
+    },
+    {
+      "content": "asd",
+      "userId": 6,
+      "id": 17
+    },
+    {
+      "content": "from test",
+      "userId": 4,
+      "id": 18
+    },
+    {
+      "content": "from test again",
+      "userId": 4,
+      "id": 19
+    },
+    {
+      "content": "kin ar rai dee",
+      "userId": 6,
+      "id": 20
+    },
+    {
+      "content": "bra bra\n",
+      "userId": 6,
+      "id": 21
+    },
+    {
+      "content": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "userId": 6,
+      "id": 22
+    },
+    {
+      "content": "ghfhgfhjgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "userId": 6,
+      "id": 23
+    },
+    {
+      "content": "dddddddddddddddddddddddddddddddddddddddddddaasasa",
+      "userId": 6,
+      "id": 24
+    },
+    {
+      "content": "jhnjhjhkjhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\nlkl;lkkkkkkkkkkkkkkkkkkkkkkk",
+      "userId": 6,
+      "id": 25
+    },
+    {
+      "content": "gggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "userId": 6,
+      "id": 26
+    },
+    {
+      "content": "fgdfgdfgdgggggggggggggg\n",
+      "userId": 6,
+      "id": 27
+    },
+    {
+      "content": "fggggg\nfgfgfg",
+      "userId": 6,
+      "id": 28
+    },
+    {
+      "content": "dasdadddddddddddddddddddddddd  tong tong otng",
+      "userId": 6,
+      "id": 29
+    },
+    {
+      "content": "ffffffffffffffffffffffffffffffffffffffffafs,f;las,f;fgggggggggggggggggggggggggggghghghghg mglkfmglfkgmfl",
+      "userId": 6,
+      "id": 30
+    },
+    {
+      "content": "The longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosis",
+      "userId": 6,
+      "id": 31
+    },
+    {
+      "content": "dsdsdsdsdasdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd     afdsfdsfsd               fsdfsdfsdfsdfsd",
+      "userId": 6,
+      "id": 32
+    },
+    {
+      "content": "The longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosisThe longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosisThe longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosisThe longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosisThe longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosisThe longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosisThe longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosis",
+      "userId": 6,
+      "id": 33
+    },
+    {
+      "content": "hghgh",
+      "userId": 6,
+      "id": 34
+    },
+    {
+      "content": "dsds",
+      "userId": 6,
+      "id": 35
+    },
+    {
+      "content": "ds",
+      "userId": 6,
+      "id": 36
+    },
+    {
+      "content": "dsdsds",
+      "userId": 6,
+      "id": 37
+    },
+    {
+      "content": "hgjhjhh",
+      "userId": 6,
+      "id": 38
+    },
+    {
+      "content": "ดืหกสดืหกาสดหกสาดหืดสห",
+      "userId": 6,
+      "id": 39
+    },
+    {
+      "content": "zdxdsddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "userId": 7,
+      "id": 40
+    },
+    {
+      "content": "Complains from tong",
+      "userId": 6,
+      "id": 41
+    },
+    {
+      "content": "My name is Nod",
+      "userId": 3,
+      "id": 42
+    },
+    {
+      "content": "I'm so handsome!!!!",
+      "userId": 3,
+      "id": 43
+    },
+    {
+      "content": "bye bye",
+      "userId": 3,
+      "id": 44
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "tansadza"
+    },
+    {
+      "id": 2,
+      "username": "niklaz101"
+    },
+    {
+      "username": "hirun",
+      "id": 3
+    },
+    {
+      "username": "test",
+      "id": 4
+    },
+    {
+      "username": "rest",
+      "id": 5
+    },
+    {
+      "username": "tong",
+      "id": 6
+    },
+    {
+      "username": "nik",
+      "id": 7
+    },
+    {
+      "username": "hirub",
+      "id": 8
+    }
+  ]
+>>>>>>> f7d3e39ffb8792e8df2bdbfd247e72bed1c9e7a8
 }

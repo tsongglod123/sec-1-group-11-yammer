@@ -2,11 +2,32 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
-const REPO = ref(
-	"https://github.com/tsongglod123/sec-1-group-11-supreme-engine"
-);
-const appRouter = useRouter();
+const props = defineProps({
+	userId: {
+		type: String,
+		require: true,
+	},
+});
 
+const URL = "http://localhost:5000/users";
+const REPO = "https://github.com/tsongglod123/sec-1-group-11-supreme-engine";
+
+const appRouter = useRouter();
+const user = ref({});
+
+// GET
+const getUser = async (url, id) => {
+	const res = await fetch(url + "/" + id);
+	if (res.status === 200) {
+		user.value = await res.json();
+		appRouter.push({
+			name: "user",
+			params: { userId: user.value.id },
+		});
+	}
+};
+
+const homepage = () => appRouter.push({ name: "contents" });
 const logout = () => appRouter.push({ name: "root" });
 </script>
 
@@ -36,11 +57,13 @@ const logout = () => appRouter.push({ name: "root" });
 						class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-52"
 					>
 						<li>
-							<router-link :to="{ name: 'homepage' }">
-								<div>Homepage</div>
-							</router-link>
+							<button @click.left="homepage">Homepage</button>
 						</li>
-						<li><div>My Yammer</div></li>
+						<li>
+							<button @click.left="getUser(URL, userId)">
+								My Yammer
+							</button>
+						</li>
 						<li>
 							<a :href="REPO" target="_blank"><div>About</div></a>
 						</li>
@@ -48,7 +71,7 @@ const logout = () => appRouter.push({ name: "root" });
 				</div>
 			</div>
 			<div class="navbar-center">
-				<router-link :to="{ name: 'homepage' }">
+				<router-link :to="{ name: 'contents' }">
 					<a class="btn btn-ghost normal-case text-xl">Yammer</a>
 				</router-link>
 			</div>

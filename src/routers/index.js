@@ -3,6 +3,7 @@ import Welcome from "../views/Welcome.vue";
 import Homepage from "../views/Homepage.vue";
 import User from "../views/User.vue";
 import NotFound from "../views/NotFound.vue";
+import Contents from "../views/Contents.vue";
 
 const history = createWebHistory();
 const routes = [
@@ -12,14 +13,21 @@ const routes = [
 		component: Welcome,
 	},
 	{
-		path: "/home/:userId",
+		path: "/user/:userId",
 		name: "homepage",
 		component: Homepage,
-	},
-	{
-		path: "/:username",
-		name: "user",
-		component: User,
+		children: [
+			{
+				path: "",
+				name: "contents",
+				component: Contents,
+			},
+			{
+				path: "posts",
+				name: "user",
+				component: User,
+			},
+		],
 	},
 	{
 		path: "/:catchNotMatchPath(.*)",
