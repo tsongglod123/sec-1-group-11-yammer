@@ -45,9 +45,9 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-    <div id="content-list" class="grid justify-center pt-2">
+    <div id="content-list">
         <div v-for="(post, index) in user.posts" :key="index">
-            <div class="box-element box-border max-h-xl p-6 max-w-xl">
+            <div class="box-element box-content max-h-xl p-6">
                 <div class="font-semibold text-xl flex justify-between">
                     <div class="flex flex-row">
                         <div class="pr-1">You complain</div>
@@ -63,6 +63,8 @@ onBeforeMount(async () => {
 
 <style scoped>
 .box-element {
-    @apply shadow-xl bg-white my-2 rounded-xl;
+    @apply shadow-xl my-3 rounded-xl;
+    width:500px;
+    background-color: #EDE6DB;
 }
 </style>

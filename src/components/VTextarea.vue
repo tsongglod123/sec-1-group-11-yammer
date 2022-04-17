@@ -38,10 +38,10 @@ const createPost = async (new_content) => {
 
 <template>
 	<div id="text-area">
-		<div class="box-border px-9 shadow-xl bg-white rounded-xl">
+		<div class="box-element">
 			<div class="py-7">
 				<textarea
-					class="textarea focus:outline-none text-xl textarea-ghost bg-gray-200 rounded-xl"
+					class="textarea"
 					rows="3"
 					cols="50"
 					placeholder="What happened?"
@@ -70,7 +70,12 @@ textarea {
 	resize: none;
 }
 .textarea {
-	@apply textarea-ghost;
+	@apply textarea-ghost focus:outline-none text-xl rounded-xl;
+	background-color: #EDE6DB;
+}
+.box-element {
+	@apply box-border shadow-xl rounded-xl px-9 ;
+    background-color: #EDE6DB;
 }
 .btn {
 	@apply btn-primary rounded-full;

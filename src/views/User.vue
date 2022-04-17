@@ -22,18 +22,21 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-    <div id="user-page">
+    <div id="user-page" class="content-container" >
         <div class="flex justify-center pt-5">
             <button type="button" class="btn">
                 <span class="font-bold">{{ user.username }}</span>
             </button>
         </div>
-        <VUserContents :userId="parseInt(params.userId)" />
+        <VUserContents :userId="parseInt(params.userId)" class="grid justify-center pt-2"/>
     </div>
 </template>
 
 <style scoped>
+.content-container {
+    background-color: #1A3C40;
+}
 .btn {
-	@apply btn-primary rounded-full;
+    @apply btn-primary rounded-full;
 }
 </style>

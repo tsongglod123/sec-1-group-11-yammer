@@ -4,7 +4,7 @@ const emits = defineEmits(["click:action"]);
 
 <template>
 	<button
-		class="btn btn-ghost btn-circle"
+		class="btn btn-ghost btn-circle logo-icon"
 		@click.left="$emit('click:action', { name: 'root' })"
 	>
 		<div class="indicator">
