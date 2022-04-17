@@ -28,7 +28,7 @@ onBeforeMount(async () => {
                 <span class="font-bold">{{ user.username }}</span>
             </button>
         </div>
-        <VUserContents :userId="parseInt(params.userId)" class="grid justify-center pt-2 content-container" />
+        <VUserContents :userId="parseInt(params.userId)" class="grid justify-center pt-2"/>
     </div>
 </template>
 
@@ -36,6 +36,7 @@ onBeforeMount(async () => {
 .content-container {
     background-color: #1A3C40;
 }
+
 .btn {
     @apply btn-primary rounded-full;
 }
