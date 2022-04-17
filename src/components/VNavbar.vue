@@ -33,7 +33,7 @@ const logout = (name) => appRouter.push(name);
 </script>
 
 <template>
-    <div id="navbar-section" class="content-container sticky top-0 left-0 right-0 opacity-100">
+    <div id="navbar-section" class="sticky top-0 left-0 right-0 opacity-100">
         <div class="navbar-color fade-animation navbar ">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -98,9 +98,6 @@ const logout = (name) => appRouter.push(name);
 </template>
 
 <style scoped>
-.content-container {
-    background-color: #1A3C40;
-}
 .logo-icon{
    color: white;
 }

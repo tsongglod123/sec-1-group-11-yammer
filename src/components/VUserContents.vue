@@ -71,7 +71,7 @@ onBeforeMount(async () => {
 
 <template>
 	<div id="content-list">
-		<div v-if="length < 1">No contents</div>
+		<div v-if="length < 1" class="no-content text-5xl pt-20">No contents</div>
 		<template v-else>
 			<div v-for="(post, index) in user.posts" :key="index">
 				<div class="box-element box-content max-h-xl p-6">
@@ -90,6 +90,9 @@ onBeforeMount(async () => {
 </template>
 
 <style scoped>
+.no-content {
+	color: #2f6d74
+}
 .box-element {
 	@apply shadow-xl my-3 rounded-xl;
 	width: 500px;

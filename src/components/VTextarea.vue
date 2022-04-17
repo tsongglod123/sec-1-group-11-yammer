@@ -78,6 +78,6 @@ textarea {
     background-color: #EDE6DB;
 }
 .btn {
-	@apply btn-primary rounded-full;
+	@apply btn-primary rounded-full shadow-lg;
 }
 </style>
