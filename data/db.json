@@ -132,8 +132,13 @@
     },
     {
       "userId": 6,
+<<<<<<< HEAD
       "content": "fgfgf\nyghghg\ndgdfgd\ndfgdfgd",
       "id": 46
+=======
+      "content": "test EDIT function again",
+      "id": 47
+>>>>>>> 77aa41cf45ee07bab9f013fd96d08692404b823b
     }
   ],
   "users": [
