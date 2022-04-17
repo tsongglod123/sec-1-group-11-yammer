@@ -3,7 +3,7 @@ import { ref, onBeforeMount } from "vue";
 import VEdit from "./buttons/VEdit.vue";
 import VDelete from "./buttons/VDelete.vue";
 
-const USER_URL = "http://localhost:5000/users";
+const USERS_URL = "http://localhost:5000/users";
 const POSTS_URL = "http://localhost:5000/posts";
 
 const props = defineProps({
@@ -65,27 +65,24 @@ const editPost = async (modified_post) => {
 };
 
 onBeforeMount(async () => {
-	await getPosts(USER_URL, props.userId);
+	await getPosts(USERS_URL, props.userId);
 });
 </script>
 
 <template>
 	<div id="content-list">
-		<div v-if="length < 1">No contents</div>
-		<template v-else>
-			<div v-for="(post, index) in user.posts" :key="index">
-				<div class="box-element box-content max-h-xl p-6">
-					<div class="font-semibold text-xl flex justify-between">
-						<div class="flex flex-row">
-							<div class="pr-1">You complain</div>
-							<VEdit :id="post.id" @click:action="editPost" />
-						</div>
-						<VDelete :id="post.id" @click:action="deletePost" />
+		<div v-for="(post, index) in user.posts" :key="index">
+			<div class="box-element box-content max-h-xl p-6">
+				<div class="font-semibold text-xl flex justify-between">
+					<div class="flex flex-row">
+						<div class="pr-1">You complain</div>
+						<VEdit :id="post.id" @click:action="editPost" />
 					</div>
-					<div class="break-words pt-2">{{ post.content }}</div>
+					<VDelete :id="post.id" @click:action="deletePost" />
 				</div>
+				<div class="break-words pt-2">{{ post.content }}</div>
 			</div>
-		</template>
+		</div>
 	</div>
 </template>
 
