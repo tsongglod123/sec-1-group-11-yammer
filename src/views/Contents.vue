@@ -25,7 +25,7 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-	<div id="content-section">
+	<div id="content-section" class="content-container">
 		<VTextarea
 			:posts="posts"
 			:userId="parseInt(params.userId)"
@@ -39,4 +39,8 @@ onBeforeMount(async () => {
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.content-container {
+    background-color: #1A3C40;
+}
+</style>

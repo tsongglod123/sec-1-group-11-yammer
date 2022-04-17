@@ -33,11 +33,11 @@ const logout = (name) => appRouter.push(name);
 </script>
 
 <template>
-    <div id="navbar-section" class="sticky top-0 left-0 right-0">
-        <div class="navbar bg-base-200">
+    <div id="navbar-section" class="content-container sticky top-0 left-0 right-0 opacity-100">
+        <div class="navbar-color fade-animation navbar ">
             <div class="navbar-start">
                 <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <label tabindex="0" class="logo-icon btn btn-ghost btn-circle ">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -55,7 +55,7 @@ const logout = (name) => appRouter.push(name);
                     </label>
                     <ul
                         tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-52"
+                        class="menu-color menu menu-compact dropdown-content mt-3 p-3 shadow bg-base-200 rounded-box w-52"
                     >
                         <li>
                             <button @click.left="homepage">Homepage</button>
@@ -80,8 +80,11 @@ const logout = (name) => appRouter.push(name);
             </div>
             <div class="navbar-center">
                 <router-link :to="{ name: 'contents' }">
-                    <a class="normal-case text-xl font-extrabold p-4">
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-700">Yammer</span>
+                    <a class="normal-case text-xl font-bold p-4">
+                        <span
+                            class="logo-icon"
+                            >Yammer</span
+                        >
                     </a>
                 </router-link>
             </div>
@@ -94,4 +97,34 @@ const logout = (name) => appRouter.push(name);
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.content-container {
+    background-color: #1A3C40;
+}
+.logo-icon{
+   color: white;
+}
+
+.menu-color{
+    background-color: #417D7A;
+    color: white;
+}
+.navbar-color {
+    background-color: #417D7A;
+}
+.fade-animation {
+    opacity: 0;
+    animation: fade-in-move-down 1s forwards;
+}
+
+@keyframes fade-in-move-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
