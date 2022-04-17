@@ -49,7 +49,7 @@ const getPost = async (id) => {
 		<!-- Put this part before </body> tag -->
 		<input type="checkbox" :id="`edit-modal-${id}`" class="modal-toggle" />
 		<div class="modal">
-			<div class="modal-box">
+			<div class="modal-box box-element ">
 				<div class="font-bold text-xl px-4 pb-4">Edit</div>
 				<textarea
 					class="textarea bg-gray-200 rounded-xl ml-3 mt-2"
@@ -77,6 +77,9 @@ const getPost = async (id) => {
 <style scoped>
 textarea {
 	resize: none;
+}
+.box-element {
+	background-color: #EDE6DB;
 }
 .textarea {
 	@apply textarea-ghost focus:outline-none border-2;
