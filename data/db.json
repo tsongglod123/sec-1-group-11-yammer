@@ -132,8 +132,8 @@
     },
     {
       "userId": 6,
-      "content": "test EDIT function again",
-      "id": 47
+      "content": "fgfgf\nyghghg\ndgdfgd\ndfgdfgd",
+      "id": 46
     }
   ],
   "users": [
@@ -168,6 +168,10 @@
     {
       "username": "hirub",
       "id": 8
+    },
+    {
+      "username": "ttong",
+      "id": 9
     }
   ]
 }
