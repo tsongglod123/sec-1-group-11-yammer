@@ -30,6 +30,11 @@ const getUser = async (url, id) => {
 
 const homepage = () => appRouter.push({ name: "contents" });
 const logout = (name) => appRouter.push(name);
+
+const backtotop = () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 </script>
 
 <template>
@@ -80,7 +85,8 @@ const logout = (name) => appRouter.push(name);
             </div>
             <div class="navbar-center">
                 <router-link :to="{ name: 'contents' }">
-                    <a class="normal-case text-xl font-bold p-4">
+                    <a class="normal-case text-xl font-bold p-4"
+                    @click="backtotop">
                         <span
                             class="logo-icon"
                             >Yammer</span
