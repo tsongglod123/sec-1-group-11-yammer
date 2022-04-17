@@ -100,7 +100,6 @@ const login = async (name) => {
    color: white;
 }
 .content-container {
-    background-color: #1A3C40;
     padding-top: 50px;
     text-align: center;
     height: 100%;

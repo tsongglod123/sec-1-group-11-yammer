@@ -22,7 +22,7 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-	<div id="user-page" class="content-container">
+	<div id="user-page">
 		<div class="flex justify-center pt-5">
 			<button type="button" class="btn">
 				<span class="font-bold">{{ user.username }}</span>
@@ -36,10 +36,7 @@ onBeforeMount(async () => {
 </template>
 
 <style scoped>
-.content-container {
-	background-color: #1a3c40;
-}
 .btn {
-	@apply btn-primary rounded-full;
+	@apply btn-primary rounded-full shadow-lg;
 }
 </style>

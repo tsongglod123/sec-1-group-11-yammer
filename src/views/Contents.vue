@@ -25,11 +25,11 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-	<div id="content-section" class="content-container">
+	<div id="content-section">
 		<VTextarea
 			:posts="posts"
 			:userId="parseInt(params.userId)"
-			class="flex justify-center pt-10"
+			class="flex justify-center pt-10 "
 		/>
 		<VContents
 			:posts="posts"
@@ -39,8 +39,4 @@ onBeforeMount(async () => {
 	</div>
 </template>
 
-<style scoped>
-.content-container {
-    background-color: #1A3C40;
-}
-</style>
+<style scoped></style>

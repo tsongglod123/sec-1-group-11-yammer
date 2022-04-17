@@ -71,22 +71,30 @@ onBeforeMount(async () => {
 
 <template>
 	<div id="content-list">
-		<div v-for="(post, index) in user.posts" :key="index">
-			<div class="box-element box-content max-h-xl p-6">
-				<div class="font-semibold text-xl flex justify-between">
-					<div class="flex flex-row">
-						<div class="pr-1">You complain</div>
-						<VEdit :id="post.id" @click:action="editPost" />
-					</div>
-					<VDelete :id="post.id" @click:action="deletePost" />
-				</div>
-				<div class="break-words pt-2">{{ post.content }}</div>
-			</div>
+		<div v-if="length < 1" class="no-content text-5xl pt-20">
+			No contents
 		</div>
+		<template v-else>
+			<div v-for="(post, index) in user.posts" :key="index">
+				<div class="box-element box-content max-h-xl p-6">
+					<div class="font-semibold text-xl flex justify-between">
+						<div class="flex flex-row">
+							<div class="pr-1">You complain</div>
+							<VEdit :id="post.id" @click:action="editPost" />
+						</div>
+						<VDelete :id="post.id" @click:action="deletePost" />
+					</div>
+					<div class="break-words pt-2">{{ post.content }}</div>
+				</div>
+			</div>
+		</template>
 	</div>
 </template>
 
 <style scoped>
+.no-content {
+	color: #2f6d74;
+}
 .box-element {
 	@apply shadow-xl my-3 rounded-xl;
 	width: 500px;
