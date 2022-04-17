@@ -28,7 +28,7 @@ onBeforeMount(async () => {
                 <span class="font-bold">{{ user.username }}</span>
             </button>
         </div>
-        <VUserContents :userId="parseInt(params.userId)" class="grid justify-center pt-2"/>
+        <VUserContents :userId="parseInt(params.userId)" class="grid justify-center pt-2 content-container" />
     </div>
 </template>
 

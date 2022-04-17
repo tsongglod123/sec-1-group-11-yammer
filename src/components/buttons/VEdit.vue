@@ -50,9 +50,9 @@ const getPost = async (id) => {
 		<input type="checkbox" :id="`edit-modal-${id}`" class="modal-toggle" />
 		<div class="modal">
 			<div class="modal-box">
-				<div class="font-bold text-lg">Edit</div>
+				<div class="font-bold text-xl px-4 pb-4">Edit</div>
 				<textarea
-					class="textarea bg-gray-200 rounded-xl"
+					class="textarea bg-gray-200 rounded-xl ml-3 mt-2"
 					rows="3"
 					cols="60"
 					v-model="post.content"
@@ -79,6 +79,7 @@ textarea {
 	resize: none;
 }
 .textarea {
-	@apply textarea-ghost;
+	@apply textarea-ghost focus:outline-none border-2;
+	border-color: rgb(192, 190, 190);
 }
 </style>

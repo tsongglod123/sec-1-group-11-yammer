@@ -80,7 +80,7 @@ const login = async (name) => {
             </div>
             <div
                 v-show="isNotFill"
-                class="flex justify-items-center pt-5 text-red-600"
+                class="flex justify-items-center pt-5 text-red-600 font-semibold"
             >
                 Please enter your username!
             </div>
