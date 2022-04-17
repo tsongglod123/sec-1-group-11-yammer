@@ -1,13 +1,13 @@
 <script setup>
 const props = defineProps({
-    posts: {
-        type: Array,
-        require: true,
-    },
-    userId: {
-        type: Number,
-        require: true,
-    },
+	posts: {
+		type: Array,
+		require: true,
+	},
+	userId: {
+		type: Number,
+		require: true,
+	},
 });
 </script>
 
