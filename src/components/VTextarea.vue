@@ -41,7 +41,7 @@ const createPost = async (new_content) => {
 		<div class="box-border px-9 shadow-xl bg-white rounded-xl">
 			<div class="py-7">
 				<textarea
-					class="textarea focus:outline-none text-xl textarea-ghost bg-gray-200 rounded-xl"
+					class="textarea focus:outline-none text-xl bg-gray-200 rounded-xl"
 					rows="3"
 					cols="50"
 					placeholder="What happened?"
