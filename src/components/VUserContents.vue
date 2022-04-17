@@ -37,15 +37,25 @@ const deletePost = async (id) => {
 };
 
 // PUT
-const editPost = (post) => {
-	// const res = await fetch(POSTS_URL + "/" + id, {
-	// 	method: "PUT",
-	// 	headers: {
-	// 		"content-type": "application/json",
-	// 	},
-	// 	body: JSON.stringify({ content: "test" }),
-	// });
-	console.log(post.content);
+const editPost = async (modified_post) => {
+	const res = await fetch(POSTS_URL + "/" + modified_post.id, {
+		method: "PUT",
+		headers: {
+			"content-type": "application/json",
+		},
+		body: JSON.stringify({
+			userId: modified_post.userId,
+			content: modified_post.content,
+		}),
+	});
+	if (res.status === 200) {
+		const modifiedPost = await res.json();
+		user.value.posts = user.value.posts.map((post) =>
+			post.id === modifiedPost.id
+				? { ...post, content: modifiedPost.content }
+				: post
+		);
+	}
 };
 
 onBeforeMount(async () => {
@@ -54,26 +64,26 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-    <div id="content-list">
-        <div v-for="(post, index) in user.posts" :key="index">
-            <div class="box-element box-content max-h-xl p-6">
-                <div class="font-semibold text-xl flex justify-between">
-                    <div class="flex flex-row">
-                        <div class="pr-1">You complain</div>
-                        <VEdit :id="post.id" @click:action="editPost"/>
-                    </div>
-                    <VDelete :id="post.id" @click:action="deletePost" />
-                </div>
-                <div class="break-words pt-2">{{ post.content }}</div>
-            </div>
-        </div>
-    </div>
+	<div id="content-list">
+		<div v-for="(post, index) in user.posts" :key="index">
+			<div class="box-element box-content max-h-xl p-6">
+				<div class="font-semibold text-xl flex justify-between">
+					<div class="flex flex-row">
+						<div class="pr-1">You complain</div>
+						<VEdit :id="post.id" @click:action="editPost" />
+					</div>
+					<VDelete :id="post.id" @click:action="deletePost" />
+				</div>
+				<div class="break-words pt-2">{{ post.content }}</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <style scoped>
 .box-element {
-    @apply shadow-xl my-3 rounded-xl;
-    width:500px;
-    background-color: #EDE6DB;
+	@apply shadow-xl my-3 rounded-xl;
+	width: 500px;
+	background-color: #ede6db;
 }
 </style>

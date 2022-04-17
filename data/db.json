@@ -41,12 +41,12 @@
       "id": 17
     },
     {
-      "content": "from test",
       "userId": 4,
+      "content": "EDIT AGAIN from test",
       "id": 18
     },
     {
-      "content": "from test again",
+      "content": "EDIT from test again",
       "userId": 4,
       "id": 19
     },
@@ -126,8 +126,8 @@
       "id": 44
     },
     {
-      "content": "1\n",
       "userId": 6,
+      "content": "test EDIT function",
       "id": 45
     },
     {
@@ -136,8 +136,8 @@
       "id": 46
     },
     {
-      "content": "dddddd\ndsds",
       "userId": 6,
+      "content": "test EDIT function again",
       "id": 47
     }
   ],
