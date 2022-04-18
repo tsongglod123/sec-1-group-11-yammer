@@ -30,7 +30,7 @@ To participate, please follow these steps
 3. Enjoy!
 
 ### What is Yammer?
-Yammer is a mock up social media that 
+Yammer is a mock up social media
 
 ## Frameworks
 **JS Frameworks**
@@ -51,8 +51,8 @@ Yammer is a mock up social media that
 | 5    | 63130500053 | [Thanatorn Roswan](https://github.com/bombenten)       |
 
 ## Inspirations
-- Facebook
-- Twitter
+- [Facebook](https://www.facebook.com)
+- [Twitter](https://twitter.com)
 
 ## Instructors
 - [Umaporn Supasitthimethee](https://github.com/umaporn-sup)
