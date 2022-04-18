@@ -29,8 +29,9 @@ To participate, please follow these steps
    ```
 3. Enjoy!
 
-### How to play
-// type here...
+### What is Yammer?
+Yammer is a mock up social media that 
+
 ## Frameworks
 **JS Frameworks**
 - [Vue.js](https://vuejs.org/guide/introduction.html)
@@ -50,7 +51,8 @@ To participate, please follow these steps
 | 5    | 63130500053 | [Thanatorn Roswan](https://github.com/bombenten)       |
 
 ## Inspirations
-// type here...
+- Facebook
+- Twitter
 
 ## Instructors
 - [Umaporn Supasitthimethee](https://github.com/umaporn-sup)
