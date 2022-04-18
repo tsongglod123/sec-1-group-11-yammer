@@ -1,11 +1,15 @@
 {
-    "posts": [{
-        "content": "First complain from us",
-        "userId": 1,
-        "id": 1
-    }],
-    "users": [{
-        "id": 1,
-        "username": "test"
-    }]
+	"posts": [
+		{
+			"content": "First complain from us",
+			"userId": 1,
+			"id": 1
+		}
+	],
+	"users": [
+		{
+			"id": 1,
+			"username": "test"
+		}
+	]
 }
