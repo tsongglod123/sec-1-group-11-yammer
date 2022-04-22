@@ -19,7 +19,7 @@ This project is for learning purposes only
 To participate, please follow these steps
 1. Clone the project
    ```
-   git clone https://github.com/tsongglod123/sec-1-group-11-supreme-engine.git
+   git clone https://github.com/tsongglod123/sec-1-group-11-yammer.git
    ```
 2. Run this command
    ```
